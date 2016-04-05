@@ -294,7 +294,7 @@ typedef enum VioozerSDKEnvironment {
 
 
 /** this notification will be thrown when the value of the unread count in my activity has changed
-/* in the user info it returns NSNunber - the current number of unread counts
+ * in the user info it returns NSNunber - the current number of unread counts
  */
 #define VIOOZER_UNREAD_COUNT_IN_MY_ACTIVITY_HAS_CHANGED @"VIOOZER_UNREAD_COUNT_IN_MY_ACTIVITY_HAS_CHANGED"
 

@@ -33,7 +33,7 @@
 /** is location checked*/
 @property (assign, nonatomic) BOOL isLocationChecked;
 /*non standart parameters*/
-@property (strong, nonatomic) NSMutableDictionary* extraParameters;
+@property (strong, nonatomic) NSDictionary* extraParameters;
 
 /**
  *  convenience constructors with coordinates only (required parameter)
@@ -79,7 +79,8 @@
 +(VioozerLocation*) VioozerLocationWithCoordinaes:(CLLocationCoordinate2D)coordinates
 											 name:(NSString*)locationName
 											 type:(NSString*)locationType
-									   andAddress:(NSString*)address andLocationNumber:(NSInteger) locationNumber;
+									   andAddress:(NSString*)address
+                                andLocationNumber:(NSInteger) locationNumber;
 
 /**
 *  convenience constructors all fields
@@ -95,7 +96,9 @@
 +(VioozerLocation*) VioozerLocationWithCoordinaes:(CLLocationCoordinate2D)coordinates
 											 name:(NSString*)locationName
 											 type:(NSString*)locationType
-									   andAddress:(NSString*)address andLocationNumber:(NSInteger) locationNumber withPlaceId:(NSString *)placeId;
+									   andAddress:(NSString*)address
+                                andLocationNumber:(NSInteger) locationNumber
+                                      withPlaceId:(NSString *)placeId;
 
 /**
  *  convenience constructors all fields
@@ -131,7 +134,7 @@
                                    locationNumber:(NSInteger)locationNumber
                                        locationId:(NSString*)locationId
                                           placeId:(NSString*)placeId
-                                  extraParameters:(NSMutableDictionary*)extraParameters;
+                                  extraParameters:(NSDictionary*)extraParameters;
 
 
 
@@ -147,7 +150,7 @@
 +(VioozerLocation*) VioozerLocationWithCoordinaes:(CLLocationCoordinate2D)coordinates
                                              name:(NSString*)locationName
                                           address:(NSString*)address
-                                  extraParameters:(NSMutableDictionary*)extraParameters;
+                                  extraParameters:(NSDictionary*)extraParameters;
 
 
 /**
