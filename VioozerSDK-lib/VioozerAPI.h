@@ -176,6 +176,19 @@ typedef enum VioozerLanguage
  */
 -(void)receivedRemoteNotification:(NSDictionary*)data withApplicationState:(UIApplicationState)state;
 
+
+/**
+ function for notifying the SDK about significant loaction change.
+*/
+- (void)reportSignificantLocationChange;
+
+/**
+ function for notifying the SDK about significant loaction change.
+ 
+@param completionHandler handler for complete fetch result
+*/
+- (void)reportBackgroundFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+
 /**
  *  show ask question view controller with VioozerLocation object
  *
@@ -248,14 +261,6 @@ typedef enum VioozerLanguage
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-
-
-
-
-
-
-
-
 
 /**
  *  UI component the ask came from
@@ -431,13 +436,10 @@ typedef enum VioozerSDKEnvironment {
 // */
 //-(void) showAskQuestionViewControllerWithLocation:(VioozerLocation*)vioozerLocation;
 
-
-
 -(void) showNewAnswerScreen;
 
 
 -(void) showNewWriteAnswerScreen;
-
 
 
 /**
