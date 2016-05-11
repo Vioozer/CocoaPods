@@ -515,5 +515,10 @@ typedef void (^SMSInviteCallback)();
 -(void) defineInvitesWithFacebook:(facebookInviteCallback)fbInvite andWhatsApp:(whatsAppInviteCallback)whatsappInvite andMail:(mailInviteCallback)mailInvite andSms:(SMSInviteCallback)smsInvite;
 
 
+/*
+ * this function defines the functions should being call when user want to share the app using Facebook (other platform are enabled by default)
+ * @param fbInvite - function for invite the via favcebook
+ */
+- (void)defineInvitesWithFacebook:(facebookInviteCallback)fbInvite;
 
 @end

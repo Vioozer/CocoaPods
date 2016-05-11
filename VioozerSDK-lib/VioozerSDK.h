@@ -5,8 +5,8 @@
 //  Created by Zeev on 12/1/14.
 //  Copyright (c) 2014 Quickode. All rights reserved.
 //
-// VioozerSDK version 1.5.4
-#define VIOOZER_SDK_VERSION @"1.5.4"
+// VioozerSDK version 1.5.5
+#define VIOOZER_SDK_VERSION @"1.5.5"
 
 #import <Foundation/Foundation.h>
 #import "VioozerLocation.h"
