@@ -112,7 +112,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'VioozerSDK-lib/libVioozerSDK.a', 'VioozerSDK-lib/*.{h,nib,ttf}'
   s.vendored_libraries = 'VioozerSDK-lib/libVioozerSDK.a'
-  s.libraries = "GGLCore", "GGLAnalytics"
+  #s.libraries = "GGLCore", "GGLAnalytics"
   s.frameworks = 'ImageIO', 'AVFoundation', 'QuartzCore', 'CoreMedia', 'SystemConfiguration', 'CoreData', 'Foundation'
 
 
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.dependency 'Google/Analytics'
+  #s.dependency 'Google/Analytics'
   s.dependency 'AFNetworking', '~> 2.5'
   s.dependency 'SVProgressHUD'
 end
