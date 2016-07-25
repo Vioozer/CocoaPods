@@ -113,6 +113,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'VioozerSDK-lib/libVioozerSDK.a', 'VioozerSDK-lib/*.{h,nib,ttf}'
   s.vendored_libraries = 'VioozerSDK-lib/libVioozerSDK.a'
   #s.libraries = "GGLCore", "GGLAnalytics"
+  s.libraries = "GoogleAnalytics"
   s.frameworks = 'ImageIO', 'AVFoundation', 'QuartzCore', 'CoreMedia', 'SystemConfiguration', 'CoreData', 'Foundation'
 
 
