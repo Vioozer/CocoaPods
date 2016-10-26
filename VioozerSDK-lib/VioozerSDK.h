@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Quickode. All rights reserved.
 //
 // VioozerSDK version 1.5.9
-#define VIOOZER_SDK_VERSION @"1.6.0"
+#define VIOOZER_SDK_VERSION @"1.6.1"
 
 #import <Foundation/Foundation.h>
 #import "VioozerLocation.h"

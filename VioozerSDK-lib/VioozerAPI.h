@@ -455,6 +455,14 @@ typedef enum VioozerSDKEnvironment {
  */
 -(UINavigationController*) getSearchLocationForAskQuestionNavigationViewController;
 
+/**
+ *  get the UtMainScreen viewcontroller in navigation controller in order to customize its presentation
+ *  @note NOT recommended
+ *
+ *  @return the navigation controller with the search viewcontroller
+ */
+-(UINavigationController*) getUtMainScreen;
+
 
 /**
  *  get the count of thank you that the user got for his answers.
@@ -521,4 +529,8 @@ typedef void (^SMSInviteCallback)();
  */
 - (void)defineInvitesWithFacebook:(facebookInviteCallback)fbInvite;
 
+/*
+ * print log file to screen
+ */
+-(NSString*)printFile;
 @end
