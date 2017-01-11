@@ -48,6 +48,12 @@ typedef enum VioozerLanguage
  */
 -(NSString*) vioozerNeedNavigationLogoImage;
 
+/**
+ * delegate for update the badge icon
+ *
+ * @param unread count.
+ */
+-(void)vioozerDidChangeUnreadCount:(NSInteger)unreadCount;
 
 
 @end
