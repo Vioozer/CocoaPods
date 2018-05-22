@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Vioozer"
-  s.version      = "2.0.5"
+  s.version      = "2.0.6"
   s.summary      = "Balcony SDK. More at http://www.balcony.io/"
 
   # This description is used to generate tags and improve search results.

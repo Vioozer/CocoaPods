@@ -14,6 +14,7 @@
 #import "VioozerShare.h"
 #import "VioozerQuestion.h"
 #import "VioozerFeedItem.h"
+#import "WhiteLabelVC.h"
 
 
 typedef enum VioozerLanguage
@@ -60,6 +61,8 @@ typedef enum VioozerLanguage
 
 /** short call for the VioozerApi singltone */
 #define VIOOZER_API [VioozerAPI sharedInstance]
+#define BALCONY_API [VioozerAPI sharedInstance]
+
 
 //MiniSDK: analytics
 /* short call for MixpanelAnalytics */
@@ -262,11 +265,6 @@ typedef enum VioozerLanguage
 */
 -(void)setSDKLanguage:(VioozerLanguage)language;
 
-/*
- * MiniSDK: exposing SDK version and build number
- */
--(NSString*) getSDKVersion;
-
 
 
 /////////////////////////////////////////////////
@@ -456,9 +454,14 @@ typedef enum VioozerSDKEnvironment {
 
 -(void) showNewAnswerScreen;
 
-
 -(void) showNewWriteAnswerScreen;
 
+//BalconySDK: opens a home screen to access all Balcony features
+-(void) showHomeScreen;
+-(id) getBalconyHomeScreen;
+
+//White label apps load colors stored inside Balcony SDK
+- (UIColor*) appColor: (NSString*) appElement;
 
 /**
  *  show view controller for free search location before ask question
