@@ -564,4 +564,10 @@ typedef void (^SMSInviteCallback)();
  * MiniSDK: this method checks location permit and uploads to backend if it changed from last time
  */
 - (int) getBalconyStatus;
+
+/*
+ * MiniSDK: used internally to launch ViewControllers with consistent color scheme and settings
+ */
+-(void) presentViewController:(UIViewController*) vc;
+
 @end
