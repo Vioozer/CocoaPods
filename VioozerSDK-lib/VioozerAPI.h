@@ -264,11 +264,6 @@ typedef enum VioozerLanguage
 */
 -(void)setSDKLanguage:(VioozerLanguage)language;
 
-/**
- * set the main color of the SDK (background and text color)
- * Default is Balcony Red color with white text
- */
--(void) setSDKColorBackground: (UIColor*) bkgColor andTextColor: (UIColor*) txtColor;
 
 
 /////////////////////////////////////////////////
