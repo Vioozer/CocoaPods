@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Vioozer"
-  s.version          = "2.0.7"
+  s.version          = "2.0.71"
   s.summary          = "Balcony SDK. More at http://www.balcony.io/"
   s.description      = "Balcony SDK. More at http://www.balcony.io/"
   s.author           = { "paolo" => "paolo@balcony.io" }
