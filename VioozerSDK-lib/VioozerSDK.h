@@ -5,7 +5,7 @@
 //  Created by Zeev on 12/1/14.
 //  Copyright (c) 2014 Quickode. All rights reserved.
 //
-//#define VIOOZER_SDK_VERSION @"2.0.5"
+//2.0.71
 #define VIOOZER_SDK_VERSION [[DATA_MANAGER getResourcesBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 
 #import <Foundation/Foundation.h>
